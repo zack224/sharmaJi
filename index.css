@@ -250,7 +250,7 @@ ul li a:hover {
 .about-container .about-left .img-modal {
     height: 30rem;
     width: 26rem;
-    background: url(/modal1.avif) no-repeat top center/cover;
+    background: url(./modal1.avif) no-repeat top center/cover;
     position: relative;
     border-radius: 5px;
 }
@@ -475,7 +475,7 @@ h1.sec-heading {
     height: 100%;
     width: 100%;
     inset: 0;
-    background: url('/videologo.jpg') no-repeat center center/cover;
+    background: url('./videologo.jpg') no-repeat center center/cover;
     background-size: 83%;
     border-radius: 50%;
 }
