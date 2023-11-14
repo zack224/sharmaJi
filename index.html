@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="media.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Kirshna Sharma - Portfolio</title>
+</head>
+
+<body>
+    <!-- main page -->
+    <div id="page">
+
+        <!-- landing section styling -->
+        <header id="page-landing">
+            <nav id="navbar">
+                <img src="logo.png" class="logo">
+                <ul class="close navlist">
+                    <li><a href="#page-landing" onclick="toggle()">home</a></li>
+                    <li><a href="#page-about" onclick="toggle()">about</a></li>
+                    <li><a href="#page-portfolio" onclick="toggle()">portfolio</a></li>
+                    <li><a href="#page-services" onclick="toggle()">services</a></li>
+                    <li><a href="#page-experience" onclick="toggle()">experience</a></li>
+                    <li><a href="#page-form" class="btn-primary btn-primary-s" onclick="toggle()">contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                </div>
+            </nav>
+
+            <div class="landing-heading">
+                <h6>I'm a</h6>
+                <h1>full stack <br> website <br> <span>developer</span> <span id="dot"></span></h1>
+                <a href="/" class="btn-previous-projects btn-primary btn-primary-l">previous projects</a>
+            </div>
+
+        </header>
+
+        <!-- about section styling -->
+        <div id="page-about">
+            <div class="about-container">
+                <div class="about-left">
+                    <div class="img-modal"><span></span></div>
+                </div>
+                <div class="about-right">
+                    <h1>about me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse natus magni voluptatem totam
+                        numquam. Commodi dicta tempore illum beatae qui repellat ipsum, minus voluptas soluta eligendi
+                        unde cum sed ex aliquam vitae dolorem iste quam laudantium laborum sunt veritatis quidem eius.
+                        Est, temporibus soluta explicabo dolore eius quod atque eaque? Lorem ipsum dolor sit amet.</p>
+                    <div>
+                        <a href="/" class="btn-primary">hire me</a><a href="/" class="btn-secondary">resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- portfolio section styling -->
+
+        <div id="page-portfolio">
+            <div class="portfolio-heading">
+                <h1>portfolio</h1>
+                <ul class="porfolio-links">
+                    <li>mobile app</li>
+                    <li>website</li>
+                    <li>desktop</li>
+                    <li>other projects</li>
+                </ul>
+            </div>
+
+
+            <!-- right image card -->
+            <div class="card">
+                <div class="card-right">
+                    <div class="card-img" style="background: url(/webimg2.jpg) no-repeat top center/cover;"></div>
+                </div>
+                <div class="card-left">
+
+                    <h1>project 1</h1>
+                    <h1>web dev seamless design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt corrupti voluptatum
+                        excepturi ut impedit ex doloremque natus omnis ducimus! Saepe fugit nobis, tempore, laborum
+                        incidunt quo veniam, molestias ipsa sunt illum cumque! Doloremque quis nulla dolores quibusdam
+                        qui exercitationem itaque distinctio non mollitia! Iusto minus id perferendis voluptas
+                        inventore! Lorem ipsum dolor sit. Lorem ipsum dolor, sit amet.</p>
+                    <a href="/" class="btn-read-more"> read more</a>
+                </div>
+            </div>
+
+            <!-- left image card -->
+            <div class="card card-reverse">
+                <div class="card-left">
+                    <h1>project 1</h1>
+                    <h1>web dev seamless design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt corrupti voluptatum
+                        excepturi ut impedit ex doloremque natus omnis ducimus! Saepe fugit nobis, tempore, laborum
+                        incidunt quo veniam, molestias ipsa sunt illum cumque! Doloremque quis nulla dolores quibusdam
+                        qui exercitationem itaque distinctio non mollitia! Iusto minus id perferendis voluptas
+                        inventore! Lorem ipsum dolor sit. Lorem ipsum dolor, sit amet.</p>
+                    <a href="/" class="btn-read-more"> read more</a>
+                </div>
+                <div class="card-right">
+                    <div class="card-img" style="background: url(/webimg1.jpg) no-repeat top center/cover;"></div>
+                </div>
+            </div>
+
+            <!-- right image card -->
+            <div class="card">
+                <div class="card-right">
+                    <div class="card-img" style="background: url(/webimg3.jpg) no-repeat top center/cover;"></div>
+                </div>
+                <div class="card-left">
+
+                    <h1>project 1</h1>
+                    <h1>web dev seamless design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt corrupti voluptatum
+                        excepturi ut impedit ex doloremque natus omnis ducimus! Saepe fugit nobis, tempore, laborum
+                        incidunt quo veniam, molestias ipsa sunt illum cumque! Doloremque quis nulla dolores quibusdam
+                        qui exercitationem itaque distinctio non mollitia! Iusto minus id perferendis voluptas
+                        inventore! Lorem ipsum dolor sit. Lorem ipsum dolor, sit amet.</p>
+                    <a href="/" class="btn-read-more"> read more</a>
+                </div>
+            </div>
+
+            <!-- left image card -->
+            <div class="card card-reverse">
+                <div class="card-left">
+                    <h1>project 1</h1>
+                    <h1>web dev seamless design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt corrupti voluptatum
+                        excepturi ut impedit ex doloremque natus omnis ducimus! Saepe fugit nobis, tempore, laborum
+                        incidunt quo veniam, molestias ipsa sunt illum cumque! Doloremque quis nulla dolores quibusdam
+                        qui exercitationem itaque distinctio non mollitia! Iusto minus id perferendis voluptas
+                        inventore! Lorem ipsum dolor sit. Lorem ipsum dolor, sit amet.</p>
+                    <a href="/" class="btn-read-more"> read more</a>
+                </div>
+                <div class="card-right">
+                    <div class="card-img" style="background: url(/webimg4.jpg) no-repeat top center/cover;"></div>
+                </div>
+            </div>
+            <div class="btn-viewall-container"><a href="#" class="btn-viewall btn-primary">view all</a></div>
+
+        </div>
+
+        <!-- services section styling -->
+
+        <div id="page-services">
+            <h1 class="sec-heading">services</h1>
+
+            <div class="card-services-container">
+
+                <div class="card-services">
+                    <div class="card-services-heading">
+                        <span></span>
+                        <h1>video editing</h1>
+                    </div>
+                    <div class="card-services-detail">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae sequi illum rerum
+                            delectus! Voluptatem incidunt minima, voluptatibus totam tempore optio magni earum quam
+                            vitae mollitia cumque fugit deserunt sed laboriosam sapiente,.</p>
+                    </div>
+                </div>
+                <div class="card-services">
+                    <div class="card-services-heading">
+                        <span></span>
+                        <h1>mobile app development</h1>
+                    </div>
+                    <div class="card-services-detail">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae sequi illum rerum
+                            delectus! Voluptatem incidunt minima, voluptatibus totam tempore optio magni earum quam
+                            vitae mollitia cumque fugit deserunt sed laboriosam sapiente.</p>
+                    </div>
+                </div>
+                <div class="card-services">
+                    <div class="card-services-heading">
+                        <span></span>
+                        <h1>desktop app development</h1>
+                    </div>
+                    <div class="card-services-detail">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae sequi illum rerum
+                            delectus! Voluptatem incidunt minima, voluptatibus totam tempore optio magni earum quam
+                            vitae mollitia cumque fugit deserunt sed laboriosam sapiente,.</p>
+                    </div>
+                </div>
+                <div class="card-services">
+                    <div class="card-services-heading">
+                        <span></span>
+                        <h1>programming languages</h1>
+                    </div>
+                    <div class="card-services-detail">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae sequi illum rerum
+                            delectus! Voluptatem incidunt minima, voluptatibus totam tempore optio magni earum quam
+                            vitae mollitia cumque fugit deserunt sed laboriosam sapiente,.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- experience page  -->
+
+        <div id="page-experience">
+            <h1 class="sec-heading">experience</h1>
+
+            <div class="experience-icons">
+                <div --data-icons='AWS'> <img src="/pngwing.com.png" alt=""></div>
+                <div --data-icons='CSS3'> <img src="/pngwing.com (1).png" alt=""></div>
+                <div --data-icons='React.JS'> <img src="/pngwing.com (2).png" alt=""></div>
+                <div --data-icons='HTML'> <img src="/pngwing.com (3).png" alt=""></div>
+                <div --data-icons='Java'> <img src="/pngwing.com (4).png" alt=""></div>
+                <div --data-icons='Javascript'> <img src="/pngwing.com (5).png" alt=""></div>
+                <div --data-icons='Node.JS'> <img src="/pngwing.com (6).png" alt=""></div>
+                <div --data-icons='Python'> <img src="/pngwing.com (7).png" alt=""></div>
+            </div>
+        </div>
+
+        <!-- footer [form section] -->
+
+        <div id="page-form">
+            <h1>contact</h1>
+
+            <div class="form-container">
+
+                <div class="form-left">
+                    <h1>Drop Me a Message</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint facere labore impedit iusto
+                        consequuntur dolorem it.</p>
+
+                    <div --data-contact='+92 8973123723' class="link-div"><img src="/icons8-phone-50.png" class="link">
+                    </div>
+                    <div --data-contact='blablabla@gmail.com' class="link-div"><img src="/icons8-email-50.png"
+                            class="link"></div>
+                    <div --data-contact='house details here thank you.' class="link-div"><img
+                            src="/icons8-location-50.png" class="link"></div>
+                </div>
+
+                <div class="form-right">
+                    <form action="#" class="form">
+
+                        <div>
+                            <input type="text" name="name" id="name" class="inp" placeholder="Name">
+                        </div>
+
+                        <div>
+                            <input type="email" name="email" id="email" class="inp" placeholder="Email">
+                        </div>
+
+                        <div>
+                            <textarea type="text" name="message" id="message" class="inp"
+                                placeholder="Message"></textarea>
+                        </div>
+
+                        <input type="submit" value="send">
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="divider">
+                <img src="logo.png" class="logo">
+                <p>2022 - krishna studio. all rights reserved.</p>
+
+                <div class="footer-links">
+                    <div class="link-div"><img src="/icons8-phone-50.png" class="link"></div>
+                    <div class="link-div"><img src="/icons8-location-50.png" class="link"></div>
+                    <div class="link-div"><img src="/icons8-email-50.png" class="link"></div>
+                    <div class="link-div"><img src="/icons8-f-48.png" class="link"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('#navbar');
+            navbar.classList.toggle('sticky', scrollY > 0)
+        })
+
+        const hamburger = document.querySelector('.hamburger');
+        const ul = document.querySelector('#navbar ul');
+
+        hamburger.addEventListener('click', () => {
+            ul.classList.toggle('close');
+            ul.classList.toggle('open');
+        })
+
+        function toggle() {
+            ul.classList.toggle('close');
+            ul.classList.toggle('open');
+        }
+
+        const viewAllBtn = document.getElementsByClassName('btn-viewall-container');
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,784 @@
+/* main css code */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #192655;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* **************************************************** */
+/* page utilities */
+
+/* variables */
+:root {
+    --clr-primary-blue: rgb(56, 149, 255);
+    --clr-primary-purple: #5c3ffc;
+    --sec-heading-fsize-m: 3rem;
+    --sec-heading-fsize-s: 2rem;
+    --detail-text-clr: #bbb;
+}
+
+/* btn primary */
+.btn-primary {
+    background: linear-gradient(to right, var(--clr-primary-blue), var(--clr-primary-purple));
+    border-radius: .5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, var(--clr-primary-purple), var(--clr-primary-blue));
+    color: #fff;
+}
+
+.btn-primary-s {
+    padding: 1rem 2rem;
+}
+
+.btn-primary-m {
+    padding: 1.2rem 1.7rem;
+}
+
+.btn-primary-l {
+    padding: 1.4rem 3.4rem;
+}
+
+
+/* secondary button */
+.btn-secondary {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #0d2035;
+    border-radius: 5px;
+
+}
+
+/* cards styling */
+
+
+/* scrollbar styling */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--clr-primary-purple), var(--clr-primary-blue));
+    border: 5px solid transparent;
+    border-radius: 999px;
+    background-clip: content-box;
+}
+
+/* hamburger styling */
+.hamburger {
+    height: 2.5rem;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    z-index: 100;
+}
+
+.hamburger .lines {
+    height: .4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2rem;
+}
+
+.sticky .hamburger .lines {
+    background-color: #000;
+}
+
+/* Handle on hover */
+
+
+.sticky {
+    height: 75px;
+    background: #fff;
+}
+
+.sticky ul li a {
+    color: #000;
+}
+
+.sticky .logo {
+    filter: invert(0);
+}
+
+.open {
+    clip-path: circle(141.4% at 100% 0);
+}
+
+/* **************************************************** */
+
+
+#page {
+    /* max-width: 1000px; */
+    color: #fff;
+    margin: auto;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-left: 10rem; */
+    position: relative;
+}
+
+/* styling navbar */
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    /* border: 2px solid red; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all .25s linear;
+}
+
+
+.logo {
+    filter: invert(1);
+}
+
+#navbar ul.navlist {
+    display: flex;
+    transition: .4s linear;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+}
+
+ul li a:hover {
+    color: #657eda;
+}
+
+/* styling the landing page */
+
+.landing-heading h6 {
+    font-size: 3rem;
+    color: #657eda;
+}
+
+.landing-heading h1 {
+    font-size: 5vmax;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.landing-heading h1 span {
+    position: relative;
+}
+
+#dot {
+    display: inline-block;
+    height: 1.2vmax;
+    width: 1.2vmax;
+    background-color: var(--clr-primary-blue);
+}
+
+.btn-previous-projects {
+    font-size: 1.5vmax;
+    text-transform: capitalize;
+}
+
+/* about section styling */
+
+#page-about {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.about-container {
+    min-height: 80vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 5rem;
+}
+
+.about-container>div {
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* left / image styling */
+
+.about-container .about-left .img-modal {
+    height: 30rem;
+    width: 26rem;
+    background: url(/modal1.avif) no-repeat top center/cover;
+    position: relative;
+    border-radius: 5px;
+}
+
+.about-container .about-left .img-modal span {
+    position: absolute;
+    top: 12%;
+    left: 16%;
+    height: 100%;
+    width: 100%;
+    border: 10px solid var(--clr-primary-blue);
+    z-index: -1;
+    border-radius: 5px;
+}
+
+/* right - text styling */
+.about-right {
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+.about-right h1 {
+    font-size: var(--sec-heading-fsize-m);
+    text-transform: capitalize;
+}
+
+.about-right p {
+    font-size: 1.7rem;
+    padding: 1.5rem 0 2.5rem 0;
+    color: var(--detail-text-clr);
+}
+
+.about-right a {
+    font-size: 1.3vmax;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 1.5rem 3.5rem;
+}
+
+/* portfolio section styling */
+
+#page-portfolio {
+    min-height: 100vh;
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.portfolio-heading {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.portfolio-heading h1 {
+    font-size: var(--sec-heading-fsize-m);
+    text-transform: capitalize;
+    padding: 2rem 0;
+}
+
+.porfolio-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-heading ul li {
+    font-size: var(--sec-heading-fsize-s);
+    padding: 2rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.portfolio-heading ul li:first-child,
+.portfolio-heading ul li:hover {
+    color: var(--clr-primary-blue);
+}
+
+.btn-viewall-container {
+    display: grid;
+    place-items: center;
+}
+
+.btn-viewall {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 1.2rem 4rem
+}
+
+
+/* card styling */
+
+.card {
+    display: flex;
+    gap: 5rem;
+    margin: 14rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.card-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.card>div {
+    width: 37rem;
+}
+
+.card>div :is(h1, p, a) {
+    margin: 1rem 0;
+}
+
+.card-left h1:first-child {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.card-left h1 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+
+.card-left p {
+    color: var(--detail-text-clr);
+    font-size: 1.4rem;
+}
+
+a.btn-read-more {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-right {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img {
+    height: 22rem;
+    width: 30rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+.card-img::before {
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: -8%;
+    height: 95%;
+    width: 95%;
+    border: 10px solid var(--clr-primary-blue);
+    z-index: -1;
+    border-radius: 5px;
+}
+
+/* services section styling */
+
+#page-services {
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 8rem;
+}
+
+h1.sec-heading {
+    font-size: var(--sec-heading-fsize-m);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 7rem 0;
+}
+
+.card-services-container {
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    grid-template-rows: 0fr 0fr;
+    place-content: center;
+    gap: 7rem 8rem;
+}
+
+.card-services {
+    height: 20rem;
+    width: 30rem;
+    background:
+        linear-gradient(#0a0a25 0 0) padding-box,
+        linear-gradient(to right bottom, var(--clr-primary-purple), var(--clr-primary-blue)) border-box;
+    padding: .3rem 0 0 .3rem;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* card gradient shadow */
+.card-services::before {
+    content: "";
+    position: absolute;
+    inset: 0.375em;
+    background: linear-gradient(to bottom right, var(--clr-primary-purple), var(--clr-primary-blue));
+    filter: blur(1.5em);
+    z-index: -1;
+}
+
+.card-services-heading {
+    display: flex;
+    align-items: center;
+}
+
+.card-services-heading span {
+    height: 4.3rem;
+    margin: 1rem 2rem;
+    padding: 0 2rem;
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.card-services-heading span::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    background: url('/videologo.jpg') no-repeat center center/cover;
+    background-size: 83%;
+    border-radius: 50%;
+}
+
+.card-services-heading h1 {
+    font-size: var(--sec-heading-fsize-s);
+    text-transform: uppercase;
+    padding-top: .5rem;
+}
+
+.card-services-detail {
+    height: 77%;
+    padding: 1rem 2rem;
+}
+
+.card-services-detail p {
+    color: var(--detail-text-clr);
+    font-size: 1.4rem;
+}
+
+/* experience page styling */
+#page-experience {
+    margin-bottom: 20rem;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.experience-icons {
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    grid-auto-rows: 0fr;
+    place-content: center;
+    gap: 14rem;
+}
+
+.experience-icons>div {
+    height: 6.1rem;
+    width: 6.1rem;
+    position: relative;
+}
+
+.experience-icons img {
+    height: 100%;
+    width: 100%;
+}
+
+.experience-icons>div::before {
+    content: attr(--data-icons);
+    position: absolute;
+    font-size: 1.5rem;
+    top: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* footer [form] section styling */
+
+#page-form {
+    min-height: 83vh;
+    width: 100%;
+    background: linear-gradient(-220deg, var(--clr-primary-purple), var(--clr-primary-blue));
+    border-radius: 70px 70px 0 0;
+    padding-top: 5rem;
+}
+
+#page-form>h1 {
+    font-size: var(--sec-heading-fsize-m);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form-container {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 7rem;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* form left styling */
+
+div.link-div {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 5px;
+    margin: 0.4rem 0;
+    display: grid;
+    place-content: center;
+    background: linear-gradient(-220deg, var(--clr-primary-blue), var(--clr-primary-purple));
+    box-shadow: -1px 2px 9px -6px #000;
+    position: relative;
+}
+
+.form-left div::before {
+    content: attr(--data-contact);
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: capitalize;
+    width: 24rem;
+}
+
+img.link {
+    height: 2rem;
+    width: 2rem;
+    filter: invert(1);
+}
+
+.form-left h1 {
+    font-size: var(--sec-heading-fsize-s);
+}
+
+.form-left p {
+    font-size: 1.4rem;
+    width: 29rem;
+    padding: 1rem 0 2rem 0;
+    color: var(--detail-text-clr);
+}
+
+/* right section styling */
+
+.form {
+    height: 23.5rem;
+    width: 25rem;
+    background: linear-gradient(-220deg, var(--clr-primary-blue), var(--clr-primary-purple));
+    box-shadow: -1px 2px 10px -6px #000;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+/* submit btn styling */
+
+.form .inp,
+input[type='submit'] {
+    color: #fff;
+    background-color: black;
+    outline: none;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.form input[type='submit'] {
+    width: 40%;
+    align-self: flex-start;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.form textarea {
+    height: 7rem;
+    resize: none;
+}
+
+.form div {
+    position: relative;
+    width: 80%;
+}
+
+/* divider styling  */
+
+.divider {
+    min-height: 7.5rem;
+    width: 75%;
+    margin: auto;
+    border-top: 0.1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divider>img {
+    filter: invert(1);
+}
+
+.divider p {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links div {
+    margin: .5rem;
+}
+
+/* responsive code */
+
+@media only screen and (width > 1024px) {
+    #page {
+        width: calc(100% - 25rem);
+    }
+}
+
+@media only screen and (width < 1024px) {
+    #page {
+        width: calc(100% - 10rem);
+    }
+}
+
+@media only screen and (width < 850px) {
+    .about-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .about-container .about-right {
+        align-items: center !important;
+        padding: 0 3rem;
+        text-align: center;
+        margin: 10rem 0 10rem 0;
+    }
+
+    .card {
+        align-items: center;
+        justify-content: center;
+        gap: 6;
+    }
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .form-right{
+        justify-content: flex-start;
+    }
+    .divider{
+        padding: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* navbar responsive */
+    #navbar ul{
+        height: 100vh;
+        width: 100vw;
+        background: #fff;
+        position: absolute;
+        top: 98%;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+    #navbar ul li a{
+        color: #000;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .close{
+        clip-path: circle(3.4% at 85.5% -4%);
+    }
+    .open{
+        clip-path: circle(141.4% at 100% -4%);
+    }
+}
+
+@media only screen and (width < 710px) {
+    #page {
+        width: 95vw;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-services-container {
+        grid-template-columns: auto;
+    }
+
+    .experience-icons {
+        display: flex;
+        gap: 12rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (width < 550px) {
+    #navbar{
+        padding: 0 3vmax;
+    }
+}
